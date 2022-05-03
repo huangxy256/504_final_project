@@ -14,17 +14,17 @@ The following files are contained in this project:
 
     A header file that contains:
     
-        data type "OrbitState" used to store t,x,y,z data in this problem;
+    data type "OrbitState" used to store t,x,y,z data in this problem;
 
-        a 3-dimensional integrator using RK4 method for 1st order ODE's;
+    a 3-dimensional integrator using RK4 method for 1st order ODE's;
 
-        a write-data-to-file function that generates a file named "orbit_data.txt".
+    a write-data-to-file function that generates a file named "orbit_data.txt".
 
 2. parameter.H
 
     A header file that contains:
 
-        initialization of the three parameters: beta, sigma and rho as in Lorenz problem.
+    initialization of the three parameters: beta, sigma and rho as in Lorenz problem.
 
     Variation of these numbers are done with this file.
 
@@ -40,9 +40,9 @@ The following files are contained in this project:
 
     Visualization of the results are done via gnuplot. 
 
-    To generate the trajectory, type:
+    To generate the trajectory, type in terminal:
 
-        $gnuplot
+        $ gnuplot
 
         > load 'plot_command.txt'
 
