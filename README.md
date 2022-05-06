@@ -26,13 +26,15 @@ The following files are contained in this project:
 
     initialization of the three parameters: beta, sigma and rho as in Lorenz problem.
 
-    Variation of these numbers are done with this file.
+    variation of these numbers are done with this file.
 
 3. test_lorenz.cpp
 
     A test file that explore the output. 
 
 4. orbit_data.txt
+
+    A .txt file used for data storage: 
 
     data corresponding to one set of initial condition is stored here.
 
