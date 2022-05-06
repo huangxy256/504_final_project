@@ -1,0 +1,25 @@
+# lorenz_commands.txt
+#
+# Usage:
+#  gnuplot < lorenz_commands.txt
+#
+
+set term png
+set output 'xyz_time.png'
+set xlabel 't'
+set ylabel 'x(t), y(t), z(t)'
+set title 'x, y, z versus time'
+set grid
+set style data lines
+plot 'orbit_data.txt' using 1:2 lw 3 linecolor rgb 'blue','' using 1:3 lw 3 linecolor rgb 'red','' using 1:4 lw 3 linecolor rgb 'green'
+set output 'xyz_3d.png'
+set xlabel 'x(t)'
+set ylabel 'y(t)'
+set zlabel 'z(t)'
+set title 'x, y, z trajectory'
+set grid
+set style data lines
+splot 'orbit_data.txt' using 2:3:4 lw 1 linecolor rgb 'blue'
+
+set term qt
+splot 'orbit_data.txt' using 2:3:4 lw 1 linecolor rgb 'blue'
